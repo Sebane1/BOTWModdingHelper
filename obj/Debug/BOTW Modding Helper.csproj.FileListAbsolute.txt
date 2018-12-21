@@ -1,0 +1,11 @@
+c:\users\stel9\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTW Modding Helper.csproj.GenerateResource.Cache
+c:\users\stel9\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\BOTWModdingHelper.exe.config
+c:\users\stel9\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\BOTWModdingHelper.exe
+c:\users\stel9\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\BOTWModdingHelper.pdb
+c:\users\stel9\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTWModdingHelper.Properties.Resources.resources
+c:\users\stel9\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTWModdingHelper.exe
+c:\users\stel9\documents\visual studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTWModdingHelper.pdb
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTW Modding Helper.csprojAssemblyReference.cache
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTW Modding Helper.csproj.CoreCompileInputs.cache
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTWModdingHelper.BFRESManager.resources
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTWModdingHelper.ModdingManager.resources

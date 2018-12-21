@@ -1,0 +1,9 @@
+default=wiiu/apps/homebrew_launcher/homebrew_launcher.elf
+a=sysmenu
+b=wiiu/apps/wup_installer_gx2/wup_installer_gx2.elf
+x=wiiu/apps/tcpgecko/tcpgecko.elf
+y=wiiu/apps/appstore/hbas.elf
+l=wiiu/apps/retro_launcher/retro_launcher.elf
+r=wiiu/apps/nnupatcher/nnupatcher.elf
+down=wiiu/apps/hidtovpad/hidtovpad.elf
+up=wiiu/apps/Padcon/padcon.elf

@@ -1,0 +1,5 @@
+Homebrew Launcher - Default
+CFW - Hold A
+WUP Installer GX2 - Hold B
+Appstore - Hold Y
+TCPGecko - Hold X
