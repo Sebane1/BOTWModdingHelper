@@ -63,6 +63,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CEMURulesGenerator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CEMURulesGenerator.Designer.cs">
+      <DependentUpon>CEMURulesGenerator.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BFRESManager.resx">
       <DependentUpon>BFRESManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +85,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="CEMURulesGenerator.resx">
+      <DependentUpon>CEMURulesGenerator.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

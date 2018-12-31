@@ -9,3 +9,15 @@ C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFor
 C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTW Modding Helper.csproj.CoreCompileInputs.cache
 C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTWModdingHelper.BFRESManager.resources
 C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\BOTWModdingHelper.ModdingManager.resources
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\bin\Debug\BOTWModdingHelper.exe.config
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Debug\BOTWModdingHelper.exe
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Debug\BOTWModdingHelper.pdb
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\bin\Debug\BOTWModdingHelper.exe
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\bin\Debug\BOTWModdingHelper.pdb
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Debug\BOTW Modding Helper.csprojAssemblyReference.cache
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Debug\BOTWModdingHelper.BFRESManager.resources
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Debug\BOTWModdingHelper.ModdingManager.resources
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Debug\BOTWModdingHelper.Properties.Resources.resources
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Debug\BOTW Modding Helper.csproj.GenerateResource.cache
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Debug\BOTW Modding Helper.csproj.CoreCompileInputs.cache
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Debug\BOTWModdingHelper.CEMURulesGenerator.resources

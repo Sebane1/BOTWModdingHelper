@@ -17,7 +17,8 @@ namespace BOTWModdingHelper {
         List<WorkspaceType> workspaces = new List<WorkspaceType>();
         List<GameConsole> workspaceConsoles = new List<GameConsole>();
         enum WorkspaceType {
-            SBFRESManager
+            SBFRESManager,
+            CEMURulesGenerator
         }
         enum GameConsole {
             WiiU,
@@ -34,34 +35,47 @@ namespace BOTWModdingHelper {
             switch (workspaceType) {
                 case WorkspaceType.SBFRESManager:
                     MessageBox.Show("Pick a directory for the new workspace");
-                    FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+                    FolderSelectDialog folderBrowserDialog = new FolderSelectDialog();
                     if (folderBrowserDialog.ShowDialog() == DialogResult.OK) {
-                        createTab(folderBrowserDialog.SelectedPath, workspaceType, gameConsole); ;
+                        createTab(folderBrowserDialog.SelectedPath, workspaceType, gameConsole);
                     }
+                    break;
+                case WorkspaceType.CEMURulesGenerator:
+                    createTab("", workspaceType, gameConsole);
                     break;
             }
         }
 
         private void createTab(string selectedPath, WorkspaceType workspaceType, GameConsole gameConsole) {
             TabPage tabPage = new TabPage();
-            BFRESManager bfresManager = new BFRESManager();
             workspaceTabs.TabPages.Add(tabPage);
-            bfresManager.Parent = tabPage;
-            bfresManager.Size = tabPage.Size;
-            bfresManager.BaseProjectPath = selectedPath;
+            switch (workspaceType) {
+                case WorkspaceType.SBFRESManager:
+                    BFRESManager bfresManager = new BFRESManager();
+                    bfresManager.Parent = tabPage;
+                    bfresManager.Size = tabPage.Size;
+                    bfresManager.BaseProjectPath = selectedPath;
+                    switch (gameConsole) {
+                        case GameConsole.WiiU:
+                            tabPage.Text = "BFRES Manager (Wii U)";
+                            bfresManager.NintendoSwitchMode = false;
+                            break;
+                        case GameConsole.Switch:
+                            tabPage.Text = "BFRES Manager (Switch)";
+                            bfresManager.NintendoSwitchMode = true;
+                            break;
+                    }
+                    break;
+                case WorkspaceType.CEMURulesGenerator:
+                    CEMURulesGenerator cemuRulesGenerator = new CEMURulesGenerator();
+                    cemuRulesGenerator.Parent = tabPage;
+                    cemuRulesGenerator.Size = tabPage.Size;
+                    tabPage.Text = "CEMU Rules Generator";
+                    break;
+            }
             workspacePaths.Add(selectedPath);
             workspaces.Add(workspaceType);
             workspaceConsoles.Add(gameConsole);
-            switch (gameConsole) {
-                case GameConsole.WiiU:
-                    tabPage.Text = "BFRES Manager (Wii U)";
-                    bfresManager.NintendoSwitchMode = false;
-                    break;
-                case GameConsole.Switch:
-                    tabPage.Text = "BFRES Manager (Switch)";
-                    bfresManager.NintendoSwitchMode = true;
-                    break;
-            }
         }
 
         private void SaveConfig(string path) {
@@ -111,7 +125,7 @@ namespace BOTWModdingHelper {
                 }
             }
         }
-        
+
         private void newToolStripMenuItem_Click(object sender, EventArgs e) {
 
         }
@@ -146,6 +160,10 @@ namespace BOTWModdingHelper {
             if (!string.IsNullOrEmpty(GetLastConfig())) {
                 LoadConfig(GetLastConfig());
             }
+        }
+
+        private void cEMURulesGeneratorToolStripMenuItem_Click(object sender, EventArgs e) {
+            createNewWorkspace(WorkspaceType.CEMURulesGenerator, GameConsole.WiiU);
         }
     }
 }

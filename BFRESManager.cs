@@ -228,14 +228,14 @@ namespace BOTWModdingHelper {
                 }
                 int fileCount = 1;
                 int count = 0;
+                foreach (string path in Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES"))) {
+                    File.Delete(path);
+                }
                 while (count < tempFiles.Count) {
                     files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\UnpackedBFRES"));
                     foreach (string file in files) {
                         if (file.Contains(".bfres.szs")) {
                             try {
-                                foreach (string path in Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES"))) {
-                                    File.Delete(path);
-                                }
                                 File.Move(file, Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES\") + Path.GetFileNameWithoutExtension(file).Replace(".bfres", null) + ".sbfres");
                                 File.Delete(file);
                                 count++;
@@ -349,6 +349,43 @@ THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMP
                         break;
                     }
                 }
+            }
+        }
+
+        private void clearFilesButton_Click(object sender, EventArgs e) {
+            if (MessageBox.Show("This will delete all files in the work area, are you sure?", "BoTW Helper", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                if (MessageBox.Show("Files will now be deleted", "BoTW Helper", MessageBoxButtons.OKCancel) == DialogResult.OK) {
+                    DeleteFiles();
+                    RefreshLists();
+                }
+            }
+        }
+
+        private void DeleteFiles() {
+            originalSBFRESList.Items.Clear();
+            extractedBFRESList.Items.Clear();
+            packedSBFRESList.Items.Clear();
+            if (!Directory.Exists(Path.Combine(baseProjectPath, @"TempEdit\OriginalSBFRES\"))) {
+                Directory.CreateDirectory(Path.Combine(baseProjectPath, @"TempEdit\OriginalSBFRES\"));
+            }
+            string[] files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\OriginalSBFRES\"));
+            foreach (string file in files) {
+                File.Delete(file);
+            }
+            if (!Directory.Exists(Path.Combine(baseProjectPath, @"TempEdit\UnpackedBFRES\"))) {
+                Directory.CreateDirectory(Path.Combine(baseProjectPath, @"TempEdit\UnpackedBFRES\"));
+            }
+            files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\UnpackedBFRES\"));
+            int count = 0;
+            foreach (string file in files) {
+                File.Delete(file);
+            }
+            if (!Directory.Exists(Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES\"))) {
+                Directory.CreateDirectory(Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES\"));
+            }
+            files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES\"));
+            foreach (string file in files) {
+                File.Delete(file);
             }
         }
     }

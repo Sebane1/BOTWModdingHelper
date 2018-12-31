@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.clearFilesButton = new System.Windows.Forms.Button();
             this.bfresEditingStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,9 +112,9 @@
             // 
             // workingFolderButton
             // 
-            this.workingFolderButton.Location = new System.Drawing.Point(198, 42);
+            this.workingFolderButton.Location = new System.Drawing.Point(291, 42);
             this.workingFolderButton.Name = "workingFolderButton";
-            this.workingFolderButton.Size = new System.Drawing.Size(273, 24);
+            this.workingFolderButton.Size = new System.Drawing.Size(180, 24);
             this.workingFolderButton.TabIndex = 8;
             this.workingFolderButton.Text = "Open Working Folder";
             this.workingFolderButton.UseVisualStyleBackColor = true;
@@ -234,10 +235,21 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "Repackaged SBFRES";
             // 
+            // clearFilesButton
+            // 
+            this.clearFilesButton.Location = new System.Drawing.Point(198, 42);
+            this.clearFilesButton.Name = "clearFilesButton";
+            this.clearFilesButton.Size = new System.Drawing.Size(87, 24);
+            this.clearFilesButton.TabIndex = 17;
+            this.clearFilesButton.Text = "Clear Files";
+            this.clearFilesButton.UseVisualStyleBackColor = true;
+            this.clearFilesButton.Click += new System.EventHandler(this.clearFilesButton_Click);
+            // 
             // BFRESManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.clearFilesButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -282,6 +294,7 @@
         private System.Windows.Forms.ToolStripMenuItem mipMapsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem injectBNTXToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem injectModelCSVToolStripMenuItem;
+        private System.Windows.Forms.Button clearFilesButton;
     }
 }
 

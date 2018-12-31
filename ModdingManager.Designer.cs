@@ -33,6 +33,7 @@
             this.loadConfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveConfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearConfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cEMURulesGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,9 +73,10 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sBFRESManagerToolStripMenuItem});
+            this.sBFRESManagerToolStripMenuItem,
+            this.cEMURulesGeneratorToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -84,43 +86,50 @@
             this.wiiUToolStripMenuItem,
             this.switchToolStripMenuItem});
             this.sBFRESManagerToolStripMenuItem.Name = "sBFRESManagerToolStripMenuItem";
-            this.sBFRESManagerToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.sBFRESManagerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sBFRESManagerToolStripMenuItem.Text = "SBFRES Manager";
             // 
             // wiiUToolStripMenuItem
             // 
             this.wiiUToolStripMenuItem.Name = "wiiUToolStripMenuItem";
-            this.wiiUToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.wiiUToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.wiiUToolStripMenuItem.Text = "Wii U";
             this.wiiUToolStripMenuItem.Click += new System.EventHandler(this.wiiUToolStripMenuItem_Click);
             // 
             // switchToolStripMenuItem
             // 
             this.switchToolStripMenuItem.Name = "switchToolStripMenuItem";
-            this.switchToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.switchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.switchToolStripMenuItem.Text = "Switch";
             this.switchToolStripMenuItem.Click += new System.EventHandler(this.switchToolStripMenuItem_Click);
             // 
             // loadConfigToolStripMenuItem
             // 
             this.loadConfigToolStripMenuItem.Name = "loadConfigToolStripMenuItem";
-            this.loadConfigToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.loadConfigToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.loadConfigToolStripMenuItem.Text = "Load Config";
             this.loadConfigToolStripMenuItem.Click += new System.EventHandler(this.loadConfigToolStripMenuItem_Click);
             // 
             // saveConfigToolStripMenuItem
             // 
             this.saveConfigToolStripMenuItem.Name = "saveConfigToolStripMenuItem";
-            this.saveConfigToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.saveConfigToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveConfigToolStripMenuItem.Text = "Save Config";
             this.saveConfigToolStripMenuItem.Click += new System.EventHandler(this.saveConfigToolStripMenuItem_Click);
             // 
             // clearConfigToolStripMenuItem
             // 
             this.clearConfigToolStripMenuItem.Name = "clearConfigToolStripMenuItem";
-            this.clearConfigToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.clearConfigToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clearConfigToolStripMenuItem.Text = "Clear Config";
             this.clearConfigToolStripMenuItem.Click += new System.EventHandler(this.clearConfigToolStripMenuItem_Click);
+            // 
+            // cEMURulesGeneratorToolStripMenuItem
+            // 
+            this.cEMURulesGeneratorToolStripMenuItem.Name = "cEMURulesGeneratorToolStripMenuItem";
+            this.cEMURulesGeneratorToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.cEMURulesGeneratorToolStripMenuItem.Text = "CEMU Rules Generator";
+            this.cEMURulesGeneratorToolStripMenuItem.Click += new System.EventHandler(this.cEMURulesGeneratorToolStripMenuItem_Click);
             // 
             // ModdingManager
             // 
@@ -155,5 +164,6 @@
         private System.Windows.Forms.ToolStripMenuItem loadConfigToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveConfigToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearConfigToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cEMURulesGeneratorToolStripMenuItem;
     }
 }
