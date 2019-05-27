@@ -9,3 +9,15 @@ C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFor
 C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Release\BOTW Modding Helper.csproj.CoreCompileInputs.cache
 C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Release\BOTWModdingHelper.exe
 C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\WindowsFormsApp1\obj\Release\BOTWModdingHelper.pdb
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\bin\Release\BOTWModdingHelper.exe.config
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\bin\Release\BOTWModdingHelper.exe
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\bin\Release\BOTWModdingHelper.pdb
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Release\BOTW Modding Helper.csprojAssemblyReference.cache
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Release\BOTWModdingHelper.BFRESManager.resources
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Release\BOTWModdingHelper.ModdingManager.resources
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Release\BOTWModdingHelper.Properties.Resources.resources
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Release\BOTWModdingHelper.CEMURulesGenerator.resources
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Release\BOTW Modding Helper.csproj.GenerateResource.cache
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Release\BOTW Modding Helper.csproj.CoreCompileInputs.cache
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Release\BOTWModdingHelper.exe
+C:\Users\stel9\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\BOTWModdingHelper\obj\Release\BOTWModdingHelper.pdb

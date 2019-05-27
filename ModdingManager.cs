@@ -54,7 +54,18 @@ namespace BOTWModdingHelper {
                     BFRESManager bfresManager = new BFRESManager();
                     bfresManager.Parent = tabPage;
                     bfresManager.Size = tabPage.Size;
-                    bfresManager.BaseProjectPath = selectedPath;
+                    if (Directory.Exists(selectedPath)) {
+                        bfresManager.BaseProjectPath = selectedPath;
+                    } else {
+                        if (MessageBox.Show(@"Could not find """ + selectedPath + @""" please specify a new directory", "Missing Directory", 
+                            MessageBoxButtons.OK, MessageBoxIcon.Warning) == DialogResult.OK) {
+                            FolderSelectDialog dialog = new FolderSelectDialog();
+                            if (dialog.ShowDialog() == DialogResult.OK) {
+                                bfresManager.BaseProjectPath = dialog.SelectedPath;
+                            }
+                        }
+                    }
+
                     switch (gameConsole) {
                         case GameConsole.WiiU:
                             tabPage.Text = "BFRES Manager (Wii U)";
@@ -92,11 +103,13 @@ namespace BOTWModdingHelper {
         }
 
         private void LoadConfig(string path) {
-            using (FileStream fileStream = new FileStream(path, FileMode.Open)) {
-                using (BinaryReader reader = new BinaryReader(fileStream)) {
-                    int count = reader.ReadInt32();
-                    for (int i = 0; i < count; i++) {
-                        createTab(reader.ReadString(), (WorkspaceType)reader.ReadInt32(), (GameConsole)reader.ReadInt32());
+            if (File.Exists(path)) {
+                using (FileStream fileStream = new FileStream(path, FileMode.Open)) {
+                    using (BinaryReader reader = new BinaryReader(fileStream)) {
+                        int count = reader.ReadInt32();
+                        for (int i = 0; i < count; i++) {
+                            createTab(reader.ReadString(), (WorkspaceType)reader.ReadInt32(), (GameConsole)reader.ReadInt32());
+                        }
                     }
                 }
             }

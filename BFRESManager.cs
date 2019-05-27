@@ -183,14 +183,14 @@ namespace BOTWModdingHelper {
             if (!Directory.Exists(Path.Combine(baseProjectPath, @"TempEdit\OriginalSBFRES\"))) {
                 Directory.CreateDirectory(Path.Combine(baseProjectPath, @"TempEdit\OriginalSBFRES\"));
             }
-            string[] files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\OriginalSBFRES\"));
+            string[] files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\OriginalSBFRES\"), "*.sbfres");
             foreach (string file in files) {
                 originalSBFRESList.Items.Add(Path.GetFileName(file));
             }
             if (!Directory.Exists(Path.Combine(baseProjectPath, @"TempEdit\UnpackedBFRES\"))) {
                 Directory.CreateDirectory(Path.Combine(baseProjectPath, @"TempEdit\UnpackedBFRES\"));
             }
-            files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\UnpackedBFRES\"));
+            files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\UnpackedBFRES\"), "*.bfres");
             int count = 0;
             foreach (string file in files) {
                 extractedBFRESList.Items.Add(count++ + "", Path.GetFileName(file), file);
@@ -198,7 +198,7 @@ namespace BOTWModdingHelper {
             if (!Directory.Exists(Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES\"))) {
                 Directory.CreateDirectory(Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES\"));
             }
-            files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES\"));
+            files = Directory.GetFiles(Path.Combine(baseProjectPath, @"TempEdit\RepackagedSBFRES\"), "*.sbfres");
             foreach (string file in files) {
                 packedSBFRESList.Items.Add(Path.GetFileName(file));
             }
@@ -271,7 +271,7 @@ namespace BOTWModdingHelper {
                     string path = Path.Combine(Environment.GetFolderPath(
                     Environment.SpecialFolder.ApplicationData).Replace(@"\Roaming", null), @"Local\Programs\Python\Python37\Scripts\sarctool.exe");
                     try {
-                        Process.Start("sarc", "extract " + @"""" + openFileDialog.FileName + @"""");
+                        Process.Start("sarc", "extract " + @"""" + openFileDialog.FileName + @"""" + @" """ + saveFileDialog.SelectedPath + @"""");
                     } catch {
                         MessageBox.Show("Sarc tool can't be found, make sure its installed and properly configured.");
                     }
